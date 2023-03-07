@@ -1,0 +1,43 @@
+table {
+  // padding: 16px;
+  border-collapse: collapse;
+
+  th {
+    color: rgba(0,0,0,0.4);
+    font-weight: 600;
+    text-align: start;
+    padding: 16px 16px 8px 16px;
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+    &:first-child {
+      cursor: unset;
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  td {
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.buttonAdd {
+  position: absolute;
+  right: 56px;
+  bottom: 56px;
+}
